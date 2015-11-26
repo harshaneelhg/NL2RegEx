@@ -1,0 +1,85 @@
+contain	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
+contain	(S\NP)/S	l(p, l(q,f(contain, q, p)))
+containing	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
+containing	(S\NP)/S	l(p, l(q,f(contain, q, p)))
+using	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
+using	(S\NP)/S	l(p, l(q,f(contain, q, p)))
+using	NP/NP	l(p, l(q,f(contain, q, p)))
+ends	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
+ends	 NP/NP	l(p, l(q,f(ends, q, p)))
+ending	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
+ending	NP/NP	l(p,f(ends,p))
+end	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
+end	NP/NP	l(p,f(ends,p))
+starting	(S\NP)/NP	l(p, l(q,f(starts, q, p)))
+starting 	NP/NP	l(p,f(starts,p))
+starts	(S\NP)/NP	l(p, l(q,f(starts, q, p)))
+starts 	NP/NP	l(p, f(starts, p))
+before	(NP\NP)/NP	l(p, l(q,f(before, q, p)))
+before	(PP\NP)/NP	l(p, l(q,f(before, q, p)))
+precedes	(PP\NP)/NP	l(p, l(q,f(before, q, p)))
+after	(NP\NP)/NP	l(p, l(q,f(after, q, p)))
+after	(PP\NP)/NP	l(p, l(q,f(after, q, p)))
+followed	(NP\NP)/NP	l(p, l(q,f(after, p, q)))
+words	NP/NP	l(p,f(word,p))
+words	S/NP	l(p,f(word,p))
+words 	(NP/NP)/(NP\NP)	l(p,f(word,p))
+word	S/NP	l(p,f(word,p))
+word	(NP/NP)/(NP\NP)	l(p,f(word,p))
+word	NP/NP	l(p,f(word,p))
+only	NP/NP	l(p,f(only,p))
+and	(NP\NP)/NP	l(p,l(q,f(and,q,p)))
+and	(NP\PP)/PP	l(p, l(q, f(and, q, p)))
+or	(NP\NP)/NP	l(p,l(q,f(or,q,p)))
+or	(NP\PP)/PP	l(p,l(q,f(or,q,p)))
+or	(NP\NP)/PP	l(p,l(q,f(or,q,p)))
+but	(NP\NP)/NP	l(p,l(q,f(and,q,p)))
+letter	NP/NP	l(p,f(letter,p))
+letters	NP/NP	l(p,f(letters,p))
+not	NP/NP	l(p,f(not,p))
+do	NP\NP	l(p,p)
+lowercase	NP\NP	l(p,f(lowercase,p))
+uppercase	NP\NP	l(p,f(uppercase,p))
+atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))
+atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))
+lines	N	lines
+ham	N	ham
+sandwich	N	sandwich
+going	N	going
+d	N	d
+black	N	black
+ing	N	ing
+er	N	er
+t	N	t
+e	N	e
+paper	N	paper
+show	N	show
+news	N	news
+number	N	number
+5	N	5
+sec	N	sec
+mun	N	mun
+q	N	q
+r	N	r
+two	N	two
+with	NP/NP	l(x,x)
+that	NP\NP	l(x,x)
+one	N	one
+vowel	N	vowel
+numbers	N	numbers
+foo	N	foo
+nu	N	nu
+dist	N	dist
+dust	N	dust
+Homer	N	Homer
+Odyssey	N	Odyssey
+er	N	er
+ab	NP	ab
+bc	NP	bc
+WorldSPWarSPII N WorldSPWarSPII
+casualties	N	casualties
+o	N	o
+any	NP	l(x,x)
+mno	N	mno
+pqr	N	pqr
+far	N	far

@@ -1,14 +1,16 @@
-
+package edu.asu.nlp.nl2regex;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import com.google.common.eventbus.Subscribe;
+
 import nl2kr.events.Bus;
 import nl2kr.events.TranslationEvent;
 import nl2kr.lambda.newImpl.FFunction;
 import nl2kr.scripts.NL2KR_TTest;
-class convrt {
+class Convert {
 	public void convert() throws IOException {
 		ArrayList<String> alInputSentences = new ArrayList<String>();
 		alInputSentences
