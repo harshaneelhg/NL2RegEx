@@ -1,8 +1,10 @@
 package edu.asu.nlp.nl2regex;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 import com.google.common.eventbus.Subscribe;
 
@@ -10,24 +12,22 @@ import nl2kr.events.Bus;
 import nl2kr.events.TranslationEvent;
 import nl2kr.lambda.newImpl.FFunction;
 import nl2kr.scripts.NL2KR_TTest;
+
+
 class Convert {
+	private List m_functionList;
 	public void convert() throws IOException {
 		ArrayList<String> alInputSentences = new ArrayList<String>();
-		alInputSentences
-				.add("D:\\sem3\\CSE571\\examples\\7sentences\\test1.txt");
+		alInputSentences.add("Data\\test.txt");
 		ArrayList<String> alSyntax = new ArrayList<String>();
-		alSyntax.add("D:\\syntax1.txt");
+		alSyntax.add("Data\\syntax.txt");
 		ArrayList<String> aloutput = new ArrayList<String>();
-		aloutput.add("D:\\output.txt");
+		aloutput.add("Data\\output.txt");
 		Bus.INSTANCE.register(this);
-		System.out.println(System.getProperty("user.dir"));
 		NL2KR_TTest.runTranslation(alInputSentences, aloutput, alSyntax);
-		System.out.println();
-
 	}
 
-	public static ArrayList<String> getFileContents(InputStreamReader IOreader)
-			throws IOException {
+	public static ArrayList<String> getFileContents(InputStreamReader IOreader) throws IOException {
 		BufferedReader reader = null;
 		ArrayList<String> alFileContents = null;
 		try {
@@ -47,8 +47,13 @@ class Convert {
 	@Subscribe
 	public void handleTranslationEvent(TranslationEvent event) {
 		System.out.println("Event");
-		FFunction f =(FFunction)(event.getResults().get(0).getNodeContent().getLambda());
+		FFunction f = (FFunction) (event.getResults().get(0).getNodeContent().getLambda());
 		System.out.println(f.getFname());
-		
+		m_functionList = event.getResults();
 	}
+	public List getFuctionList() throws IOException{
+		convert();
+		return m_functionList;
+	}
+	
 }
