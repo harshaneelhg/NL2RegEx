@@ -16,6 +16,10 @@ import nl2kr.scripts.NL2KR_TTest;
 
 class Convert {
 	private List m_functionList;
+	private boolean isTranslated;
+	Convert(){
+		this.isTranslated = false;
+	}
 	public void convert() throws IOException {
 		ArrayList<String> alInputSentences = new ArrayList<String>();
 		alInputSentences.add("Data\\test.txt");
@@ -50,9 +54,11 @@ class Convert {
 		FFunction f = (FFunction) (event.getResults().get(0).getNodeContent().getLambda());
 		System.out.println(f.getFname());
 		m_functionList = event.getResults();
+		isTranslated = true;
 	}
 	public List getFuctionList() throws IOException{
 		convert();
+		while(!isTranslated);
 		return m_functionList;
 	}
 	

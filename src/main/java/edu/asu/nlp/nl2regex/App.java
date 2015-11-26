@@ -5,17 +5,13 @@ import java.util.List;
 
 import nl2kr.ccgparsing.ParseTreeNode;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args ) throws IOException
-    {
+public class App {
+    public static void main( String[] args ) throws IOException{
     	System.out.println(System.getProperty("user.dir"));
         Convert c = new Convert();
         List<ParseTreeNode> functionList = c.getFuctionList();
         System.out.println(functionList);
+        Parser p = new Parser(functionList);
+        String regEx = p.getRegEx();
     }
 }
