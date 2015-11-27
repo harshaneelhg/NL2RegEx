@@ -13,5 +13,6 @@ public class App {
         System.out.println(functionList);
         Parser p = new Parser(functionList);
         String regEx = p.getRegEx();
+        System.out.println("RegEx: "+regEx);
     }
 }
