@@ -1,6 +1,9 @@
 package edu.asu.nlp.nl2regex;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,7 +31,15 @@ public class App {
     	if(!input.equals("")){
     		String cleanedInput = preprocess(input);
     		if(!cleanedInput.equals("")){
-    			System.out.println(cleanedInput);
+    			PrintWriter out;
+				try {
+					//Write to file
+					out = new PrintWriter("./Data/test.txt");
+	    			out.print(cleanedInput);
+	    			out.close();
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				}
     		}else{
     			System.out.println("Sentence is empty!!");
     		}
