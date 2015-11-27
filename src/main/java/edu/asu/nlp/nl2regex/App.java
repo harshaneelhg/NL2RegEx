@@ -1,7 +1,6 @@
 package edu.asu.nlp.nl2regex;
 
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -11,9 +10,6 @@ import nl2kr.ccgparsing.ParseTreeNode;
 
 public class App {
     public static void main( String[] args ) throws IOException{
-    	System.out.println(System.getProperty("user.dir"));
-    	
-    	//getUserInput
     	readUserInput();
     	
         Convert c = new Convert();

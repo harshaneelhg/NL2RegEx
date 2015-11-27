@@ -5,6 +5,7 @@ import java.util.List;
 
 import nl2kr.ccgparsing.ParseTreeNode;
 import nl2kr.lambda.newImpl.FFunction;
+import nl2kr.lambda.newImpl.LNumber;
 import nl2kr.lambda.newImpl.LVariable;
 
 public class Parser {
@@ -47,6 +48,9 @@ public class Parser {
 	private String parse(Object tree){
 		if(tree instanceof LVariable){
 			return ((LVariable)tree).getName();
+		}
+		if(tree instanceof LNumber){
+			return ((LNumber)tree).getName();
 		}
 		String fname = ((FFunction)tree).getFname().toString();
 		List arglist = ((FFunction)tree).getArguments();
