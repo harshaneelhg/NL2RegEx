@@ -66,6 +66,7 @@ with	NP/NP	l(x,x)
 that	NP\NP	l(x,x)
 one	N	one
 vowel	N	vowel
+vowels	N	vowels
 numbers	N	numbers
 foo	N	foo
 nu	N	nu
@@ -83,3 +84,14 @@ any	NP	l(x,x)
 mno	N	mno
 pqr	N	pqr
 far	N	far
+o	N	o
+ne	N	ne
+art	N	art
+z	N	z
+de	N	de
+son	N	son
+soon	N	soon
+su	N	su
+ru	N	ru
+tt	N	N
+2	N	2
