@@ -23,23 +23,22 @@ public class Parser {
 		map.put("before2", ":x:.*:y:");
 		map.put("after1", ":y:.*:x:");
 		map.put("after2", ":y:.*:x:");
-		map.put("word1", "\\b:x:\\b");
-		map.put("word2", "\\b:y:\\b");
-		map.put("letter1", "y");
-		map.put("letter2", "y");
+		map.put("word1", "(\\b:x:\\b)");
+		map.put("word2", "(\\b:y:\\b)");
+		map.put("letter1", ":x:");
+		map.put("letter2", ":x:");
 		map.put("not1", "~(:x:)");
 		map.put("not2", "~(:x:)");
-		map.put("and1", ":x:.*&.*:y:");
-		map.put("and2", ":x:.*&.*:y:");
-		map.put("or1", ":x:.*|.*:y:");
-		map.put("or2", ":x:.*|.*:y:");
+		map.put("and1", "(:x:&:y:)");
+		map.put("and2", "(:x:&:y:)");
+		map.put("or1", "(:x:|:y:)");
+		map.put("or2", "(:x:|:y:)");
 		map.put("atleast1", "(:y:){:x:}");
 		map.put("atleast2", "(:y:){:x:}");
 	}	
 	public String getRegEx(){
 		ParseTreeNode bestParseTree = getBestParseTreeNode();
 		if(bestParseTree != null){
-			System.out.println("1");
 			FFunction f = getFFunction(bestParseTree);
 			return parse(f);
 		}
@@ -56,8 +55,6 @@ public class Parser {
 		if(len == 2){
 			ret = ret.replace(":x:", parse(arglist.get(0)));
 			ret = ret.replace(":y:", parse(arglist.get(1)));
-			int xyz = 1;
-			System.out.println(xyz);
 		}
 		if(len == 1){
 			ret = ret.replace(":x:", parse(arglist.get(0)));

@@ -1,1 +1,1 @@
-lines that end with o
+lines that contain atleast 2 z
