@@ -17,10 +17,11 @@ contains	(S\NP)/PP
 containing	(S\NP)/NP
 containing	(S\NP)/S
 containing	(S\NP)/PP
+containing	NP/NP
+using	(S\NP)/PP
 using	(S\NP)/NP
 using	(S\NP)/S
 using	NP/NP
-using	(S\NP)/PP
 where	(S\NP)/NP
 ends	 NP/NP
 ends	(S\NP)/NP
@@ -33,6 +34,8 @@ starting 	NP/NP
 begin	(S\NP)/NP
 starts	(S\NP)/NP
 starts 	NP/NP
+start	(S\NP)/NP
+start 	NP/NP
 with	NP/NP
 or	(NP\NP)/NP
 or	(NP\PP)/PP
@@ -58,4 +61,7 @@ der	N
 agde	N
 atleast	(PP/NP)/NP
 going	NP
-
+in	NP/NP
+on	NP
+off	NP
+also	NP\NP
