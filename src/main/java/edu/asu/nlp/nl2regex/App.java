@@ -56,13 +56,13 @@ public class App {
 		// remove all articles
 		String[] articleList = { " the ", " a ", " an " };
 		for (String article : articleList) {
-			input = input.replaceAll(article, "");
+			input = input.replaceAll(article, " ");
 		}
 
 		// remove all punctuation
 		String[] puncList = { "\\.", "\\?", ",", "!" };
 		for (String punc : puncList) {
-			input = input.replaceAll(punc, "");
+			input = input.replaceAll(punc, " ");
 		}
 
 		// remove all which with that
