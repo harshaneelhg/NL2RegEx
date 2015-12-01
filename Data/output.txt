@@ -1,290 +1,347 @@
+upper	N	upper	-1.0
 agde	N	agde	0.0
 soon	N	soon	0.0
 der	N	der	1.609438
 der	N	f(word, f(contain, f(letters, der)))	-1.0
 der	N	l(x0, f(contain, x0, f(word, f(contain, f(letters, der)))))	-1.0
+der	N	f(contain, f(letters, der))	-1.0
 number	N/N	l(x0, f(number, x0))	0.0
 number	N/N	l(x, x)	0.6931472
-number	N	number	1.0986123
+number	N	number	2.0794415
+number	N	l(x0, f(not, x0, f(contain, number)))	-1.0
 character	N/N	l(x0, f(character, x0))	-1.0
-character	N/N	l(x, x)	0.0
+character	N/N	l(x, x)	1.3862944
+character	N/N	l(x1, l(x0, f(not, x0, f(contain, x1))))	0.6931472
+character	N/N	l(x1, l(x0, f(contain, x0, f(character, x1))))	-1.0
 character	NP/N	l(x, x)	-1.0
 character	N	character	-1.0
-bar	N	bar	0.6931472
-bar	N	l(x0, f(contain, x0, bar))	0.6931472
+bar	N	bar	1.0986123
 far	N	far	0.0
+per	N	per	0.0
 dance	N	dance	0.0
-letters	N	letters	0.0
-letters	NP/NP	l(x0, f(contaletters, x0))	-1.0
+letters	N	letters	1.609438
+letters	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
 letters	NP/NP	l(p, f(letters, p))	1.3862944
-letters	NP/NP	l(x1, l(x0, f(letter, x0, f(word, f(letter, f(letters, x1))))))	-1.0
-letters	NP/NP	l(p, f(letter, p))	-1.0
-letters	NP/NP	l(p, l(q, f(contaletters, q, p)))	-1.0
-letters	NP/NP	l(p, l(q, f(letters, q, p)))	-1.0
-letters	NP/NP	l(p, f(letterss, p))	-1.0
+letters	NP/NP	l(p, f(letterst, p))	-1.0
 letters	NP/NP	l(x, x)	0.0
 letters	NP/NP	l(x0, f(word, f(contain, f(letters, x0))))	0.0
-letters	NP/NP	l(x0, f(word, f(letter, x0)))	-1.0
-letters	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
-letters	NP/NP	l(x1, l(x0, f(letter, x0, f(word, f(letter, x1)))))	-1.0
+letters	NP/NP	l(x1, l(x0, f(not, x0, f(letters, x1))))	-1.0
+letters	NP/NP	l(x0, f(contain, f(letters, x0)))	-1.0
 letters	NP/NP	l(x0, f(word, f(letter, f(letters, x0))))	-1.0
-10	N	10	0.0
+letters	NP/NP	l(x0, f(word, f(letters, x0)))	-1.0
+letters	NP/NP	l(x0, f(letters, f(letters, x0)))	-1.0
+letters	NP/NP	l(x0, f(letter, x0))	-1.0
+letters	NP/NP	l(x1, l(x0, f(letter, x0, f(word, f(letter, x1)))))	-1.0
+letters	NP/NP	l(x0, f(word, f(letter, x0)))	-1.0
+letters	NP/NP	l(x0, f(word, f(letters, f(letters, x0))))	-1.0
+letters	NP/NP	l(x1, l(x0, f(letter, x0, f(word, f(letter, f(letters, x1))))))	-1.0
+letters	NP/NP	l(x1, l(x0, f(letters, x0, f(word, f(letters, f(letters, x1))))))	-1.0
+letters	NP/NP	l(x0, f(letter, f(letters, x0)))	-1.0
+letters	NP/NP	l(x1, l(x0, f(letters, x0, f(word, f(letters, x1)))))	-1.0
 10	N	f(number, 10)	0.0
 10	N	l(x0, f(contain, x0, f(number, 10)))	0.0
 ab	NP	ab	-1.0
-using	(S\NP)/S	l(p, l(q, f(contain, q, p)))	0.6931472
-using	(S\NP)/PP	l(x1, l(x0, f(contain, x0, x1)))	1.3862944
-using	(S\NP)/NP	l(x1, l(x0, f(using, x0, x1)))	-1.0
-using	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	2.7725887
+using	(S\NP)/S	l(p, l(q, f(contain, q, p)))	-1.0
+using	(S\NP)/PP	l(p, l(q, f(contain, q, p)))	2.0794415
+using	(S\NP)/NP	l(p, l(q, f(usings, q, p)))	-1.0
+using	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	2.3978953
+using	(S\NP)/NP	l(p, l(q, f(using, q, p)))	-1.0
+using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(starts, x1))))	-1.0
+using	(S\NP)/NP	l(x, x)	0.0
+using	(S\NP)/NP	l(x1, l(x0, f(not, x0, x1)))	-1.0
 using	(S\NP)/NP	l(p, l(q, f(ends, q, p)))	-1.0
-using	(S\NP)/NP	l(x1, l(x0, f(usings, x0, x1)))	-1.0
-using	(S\NP)/NP	l(x1, l(x0, f(after, x1, x0)))	-1.0
-using	(S\NP)/NP	l(x1, l(x0, f(start, x0, x1)))	-1.0
-using	(S\NP)/NP	l(x, x)	1.7917595
-using	(S\NP)/NP	l(p, l(q, f(starts, q, p)))	-1.0
+using	(S\NP)/NP	l(x1, l(x0, f(starts, x0, x1)))	-1.0
 using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
-using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(atleast, 2, x1))))	0.0
-using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(atleast, 3, x1))))	0.0
 using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
-using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(atleast, 5, x1))))	0.0
+using	(S\NP)/NP	l(x1, l(x0, f(using, x0, f(contain, x1))))	-1.0
 using	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(word, x1))))	-1.0
-using	NP/NP	l(p, l(q, f(contain, q, p)))	-1.0
-using	NP/NP	l(x0, f(contain, x0))	0.6931472
+using	NP/NP	l(p, f(contain, p))	1.3862944
 having	(S\NP)/NP	l(x1, l(x0, f(contain, x0, x1)))	0.0
+in	NP/NP	l(x, x)	0.6931472
 going	NP	going	0.0
-in	NP/NP	l(x, x)	1.0986123
-in	NP/NP	l(p, l(q, f(contain, q, p)))	-1.0
-in	NP/NP	l(x0, f(contain, x0))	-1.0
-in	NP/NP	l(p, f(ends, p))	-1.0
-in	NP/NP	l(p, f(in, p))	-1.0
-in	NP/NP	l(p, f(starts, p))	-1.0
-in	NP/NP	l(p, l(q, f(in, q, p)))	-1.0
-in	NP/NP	l(p, f(ins, p))	-1.0
-in	NP/NP	l(x0, f(start, x0))	-1.0
-containing	(S\NP)/S	l(p, l(q, f(contain, q, p)))	0.6931472
+containing	(S\NP)/S	l(p, l(q, f(contain, q, p)))	-1.0
 containing	N/N	l(x, x)	-1.0
-containing	(S\NP)/PP	l(x1, l(x0, f(contain, x0, x1)))	0.0
-containing	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	1.9459101
-containing	(S\NP)/NP	l(x1, l(x0, f(containings, x0, x1)))	-1.0
-containing	(S\NP)/NP	l(x1, l(x0, f(containing, x0, x1)))	-1.0
-containing	(S\NP)/NP	l(x, x)	-1.0
+containing	(S\NP)/PP	l(p, l(q, f(contain, q, p)))	1.0986123
+containing	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	2.4849067
+containing	(S\NP)/NP	l(p, l(q, f(containing, q, p)))	-1.0
+containing	(S\NP)/NP	l(p, l(q, f(containings, q, p)))	-1.0
+containing	(S\NP)/NP	l(x, x)	1.0986123
+containing	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(word, x1))))	1.0986123
+containing	(S\NP)/NP	l(x1, l(x0, f(containing, x0, f(contain, x1))))	-1.0
 containing	NP/NP	l(x, x)	0.6931472
-1	N	1	0.6931472
-2	N/N	l(x, x)	1.3862944
-2	N/N	l(x0, f(atleast, 2, x0))	0.0
-2	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 2, x1))))	0.0
-2	N	2	0.6931472
-contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
-contains	NP/NP	l(p, f(contain, p))	0.0
-contains	NP/NP	l(p, l(q, f(contains, q, p)))	-1.0
+lower	N	lower	-1.0
+1	N	1	1.0986123
+2	N	2	1.609438
 contains	NP/NP	l(p, f(contains, p))	-1.0
-contains	NP/NP	l(p, f(containss, p))	-1.0
+contains	NP/NP	l(p, f(containst, p))	-1.0
+contains	NP/NP	l(x1, l(x0, f(contains, x0, f(word, f(contains, f(letters, x1))))))	-1.0
+contains	NP/NP	l(x0, f(contains, f(contains, x0)))	-1.0
 contains	NP/NP	l(x, x)	0.6931472
 contains	NP/NP	l(x0, f(word, f(contain, x0)))	0.0
-contains	NP/NP	l(x0, f(word, f(contain, f(letters, x0))))	0.0
-contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
-contains	NP/NP	l(p, l(q, f(contacontains, q, p)))	-1.0
-contains	NP/NP	l(x0, f(contacontains, x0))	-1.0
-contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(contains, x1))))))	-1.0
+contains	NP/NP	l(x0, f(contains, f(letters, x0)))	-1.0
+contains	NP/NP	l(x1, l(x0, f(not, x0, f(contains, x1))))	-1.0
+contains	NP/NP	l(x1, l(x0, f(contains, x0, f(word, f(contains, x1)))))	-1.0
+contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
 contains	NP/NP	l(x0, f(word, f(contain, f(contains, x0))))	-1.0
-3	N/N	l(x, x)	1.3862944
-3	N/N	l(x0, f(atleast, 3, x0))	0.0
-3	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 3, x1))))	0.0
-3	N	3	0.6931472
-5	N/N	l(x, x)	1.3862944
-5	N/N	l(x0, f(atleast, 5, x0))	0.0
-5	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 5, x1))))	0.0
-5	N	5	0.0
-5	N	l(x1, l(x0, f(contain, x0, f(atleast, x1, 5))))	0.0
+contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(contains, x1))))))	-1.0
+contains	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
+contains	NP/NP	l(x0, f(contain, x0))	0.0
+contains	NP/NP	l(x0, f(word, f(contain, f(letters, x0))))	0.0
+contains	NP/NP	l(x0, f(contain, f(letters, x0)))	-1.0
+contains	NP/NP	l(x0, f(word, f(contains, f(contains, x0))))	-1.0
+contains	NP/NP	l(x0, f(word, f(contains, f(letters, x0))))	-1.0
+contains	NP/NP	l(x0, f(contain, f(contains, x0)))	-1.0
+contains	NP/NP	l(x0, f(word, f(contains, x0)))	-1.0
+contains	NP/NP	l(x1, l(x0, f(contains, x0, f(word, f(contains, f(contains, x1))))))	-1.0
+3	N	3	1.9459101
+3	N	l(x0, a(x0, f(len, 3, she)))	0.0
+3	N	l(x1, a(x1, l(x0, f(contain, x0, f(len, 3, she)))))	0.0
+re	N	re	0.0
+4	N	4	0.0
+5	N	5	1.7917595
 utilize	(S\NP)/S	l(p, l(q, f(contain, q, p)))	-1.0
-utilize	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	-1.0
-utilize	NP/NP	l(p, l(q, f(contain, q, p)))	-1.0
-letter	N	letter	0.6931472
-letter	N	f(uppercase, letter)	0.0
-letter	N	l(x0, f(contain, x0, f(only, f(uppercase, letter))))	0.0
-letter	N	f(only, f(uppercase, letter))	0.0
-letter	NP/NP	l(p, f(letter, p))	1.0986123
-letter	NP/NP	l(p, l(q, f(letter, q, p)))	-1.0
-letter	NP/NP	l(p, f(letters, p))	-1.0
+utilize	(S\NP)/PP	l(p, l(q, f(contain, q, p)))	-1.0
+utilize	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	0.0
+utilize	NP/NP	l(p, f(contain, p))	-1.0
+letter	N	letter	1.0986123
+letter	NP/NP	l(p, f(letter, p))	2.3025851
+letter	NP/NP	l(p, f(lettert, p))	-1.0
 letter	NP/NP	l(x, x)	-1.0
+starting	PP/NP	l(p, f(starts, p))	1.609438
+starting	(PP\NP)/NP	l(p, l(q, f(starts, q, p)))	-1.0
 starting	(S\NP)/NP	l(p, l(q, f(starts, q, p)))	-1.0
-starting	NP/NP	l(p, f(starts, p))	-1.0
-starting	NP/NP	l(x0, f(start, x0))	1.0986123
-word	S/NP	l(p, f(word, p))	0.6931472
-word	S/NP	l(x, x)	0.0
-word	N/N	l(x0, f(word, x0))	0.0
-word	N/N	l(x, x)	-1.0
+starting	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(starts, x1))))	0.0
+word	S/NP	l(p, f(word, p))	-1.0
+word	(NP/PP)/(NP\NP)	l(p, f(word, p))	-1.0
+word	N/N	l(x0, f(word, x0))	0.6931472
+word	N/N	l(x, x)	1.609438
+word	N/N	l(x1, l(x0, f(contain, x0, f(word, x1))))	0.0
 word	N	word	0.0
 word	(NP/NP)/(NP\NP)	l(p, f(word, p))	-1.0
-word	(NP/NP)/(NP\NP)	l(x, x)	1.0986123
 word	(NP/NP)/(NP\NP)	l(x1, a(x1, l(x0, f(word, x0))))	0.0
-word	(NP/NP)/(NP\NP)	l(x2, a(x2, l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))))	-1.0
+word	(NP/NP)/(NP\NP)	l(x, x)	1.0986123
 word	(NP/NP)/(NP\NP)	l(x1, a(x1, l(x0, f(word, f(contain, x0)))))	0.0
-word	(NP/NP)/(NP\NP)	l(x2, a(x2, l(x1, l(x0, f(contain, x0, f(word, x1))))))	-1.0
-word	(NP/NP)/(NP\NP)	l(x2, a(x2, l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))))	-1.0
+word	(NP/NP)/(NP\NP)	l(x2, a(x2, l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))))	-1.0
 word	(NP/NP)/(NP\NP)	l(x1, a(x1, l(x0, f(word, f(contain, f(letters, x0))))))	-1.0
-word	NP/NP	l(p, f(word, p))	0.6931472
+word	(NP/NP)/(NP\NP)	l(x2, a(x2, l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))))	-1.0
+word	NP/NP	l(p, f(word, p))	1.7917595
+word	NP/NP	l(p, f(wordt, p))	-1.0
+word	NP/NP	l(x, x)	1.0986123
+begin	(S\NP)/NP	l(x1, l(x0, f(starts, x0, x1)))	0.0
+begin	(S\NP)/NP	l(x1, l(x0, f(contain, x0, f(starts, x1))))	0.0
 begin	(S\NP)/NP	l(x1, l(x0, f(begin, x0, x1)))	0.0
-begin	(S\NP)/NP	l(x1, l(x0, f(start, x0, x1)))	0.0
 bc	NP	bc	-1.0
 ru	N	ru	0.0
 bi	N	bi	0.0
-two	N	two	0.0
+two	N	two	-1.0
 sec	N	sec	0.0
-characters	N	characters	1.609438
-characters	N	f(atleast, 3, characters)	0.0
-characters	N	l(x0, f(contain, x0, f(atleast, 3, characters)))	-1.0
+The	N	The	0.0
+characters	N	characters	1.0986123
 min	N	min	0.0
+bedrock	N	N	-1.0
 too	(S\NP)\(S\NP)	l(x, x)	0.0
 by	NP/NP	l(x, x)	0.0
 have	(S\NP)/NP	l(x1, l(x0, f(contain, x0, x1)))	1.0986123
-have	(S\NP)/NP	l(x1, l(x0, f(haves, x0, x1)))	-1.0
-have	(S\NP)/NP	l(x1, l(x0, f(have, x0, x1)))	-1.0
-have	(S\NP)/NP	l(x, x)	0.0
-atleast	N/N	l(x0, f(atleast, x0))	-1.0
-atleast	N/N	l(x, x)	2.4849067
-atleast	N/N	l(x0, f(atleast, 2, x0))	0.0
-atleast	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 2, x1))))	0.0
-atleast	N/N	l(x0, f(atleast, 3, x0))	0.0
-atleast	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 3, x1))))	0.0
-atleast	N/N	l(x0, f(atleast, 5, x0))	0.0
-atleast	N/N	l(x1, l(x0, f(contain, x0, f(atleast, 5, x1))))	0.0
-atleast	N/N	l(x1, l(x0, f(contain, x0, f(atleast, atleast, x1))))	-1.0
-atleast	N/N	l(x0, f(atleast, atleast, x0))	-1.0
-atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))	2.0794415
-atleast	(PP/NP)/NP	l(x, x)	0.0
-atleast	(PP/NP)/NP	l(x2, l(x1, l(x0, f(contain, x0, f(atleast, x1, x2)))))	0.0
-after	(PP\NP)/NP	l(p, l(q, f(after, q, p)))	0.6931472
+have	(S\NP)/NP	l(p, l(q, f(have, q, p)))	-1.0
+have	(S\NP)/NP	l(p, l(q, f(haves, q, p)))	-1.0
+have	(S\NP)/NP	l(x, x)	0.6931472
+have	(S\NP)/NP	l(x1, l(x0, f(not, x0, x1)))	0.0
+have	(S\NP)/NP	l(x1, l(x0, f(have, x0, f(contain, x1))))	-1.0
+atleast	PP/NP	l(p, f(atleast, p))	2.4849067
+atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))	-1.0
+yabadabadoo	N	N	-1.0
+after	(PP\NP)/NP	l(p, l(q, f(after, q, p)))	1.0986123
 after	(NP\NP)/NP	l(p, l(q, f(after, q, p)))	-1.0
 mix	N	mix	0.0
-art	N	art	0.0
+stress	N	stress	0.0
+art	N	art	1.609438
+art	N	f(word, art)	0.0
+art	N	l(x0, f(contain, x0, f(word, art)))	0.0
 su	N	su	0.0
-contain	(S\NP)/S	l(p, l(q, f(contain, q, p)))	1.609438
-contain	(S\NP)/S	l(x, x)	-1.0
-contain	(S\NP)/PP	l(x1, l(x0, f(contain, x0, x1)))	1.0986123
-contain	(S\NP)/PP	l(x, x)	0.6931472
-contain	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	2.7725887
+contain	(S\NP)/S	l(p, l(q, f(contain, q, p)))	-1.0
+contain	(S\NP)/PP	l(p, l(q, f(contain, q, p)))	2.1972246
+contain	(S\NP)/NP	l(p, l(q, f(contain, q, p)))	3.4011974
 contain	(S\NP)/NP	l(x1, l(x0, f(contains, x0, x1)))	0.0
 contain	(S\NP)/NP	l(x, x)	1.0986123
-contain	NP/NP	l(p, f(contain, p))	1.0986123
-contain	NP/NP	l(p, f(contains, p))	-1.0
-contain	NP/NP	l(x, x)	-1.0
-d	N	d	1.7917595
-d	N	f(atleast, 5, d)	0.0
-d	N	l(x0, f(contain, x0, f(atleast, 5, d)))	-1.0
-e	N	e	0.0
-one	N	one	0.0
+contain	NP/NP	l(p, f(contain, p))	1.609438
+contain	NP/NP	l(p, f(containt, p))	-1.0
+contain	NP/NP	l(x, x)	2.3025851
+contain	NP/NP	l(x1, l(x0, f(not, x0, f(contain, x1))))	2.0794415
+contain	NP/NP	l(x0, f(word, f(contain, f(letters, x0))))	-1.0
+contain	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
+contain	NP/NP	l(x0, f(contain, f(letters, x0)))	-1.0
+contain	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(contain, x1))))))	-1.0
+contain	NP/NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
+contain	NP/NP	l(x0, f(contain, f(contain, x0)))	-1.0
+contain	NP/NP	l(x0, f(word, f(contain, x0)))	-1.0
+contain	NP/NP	l(x0, f(word, f(contain, f(contain, x0))))	-1.0
+c	N	c	1.3862944
+d	N	d	0.6931472
+tain	N	tain	0.0
+e	N	e	1.3862944
+e	NP	e	0.0
+more	PP/(NP\NP)	l(p, f(atleast, p))	-1.0
+more	PP/NP	l(x0, f(atleast, x0))	0.6931472
+one	N	one	-1.0
 g	N	g	-1.0
 ers	N	ers	0.0
-words	S/NP	l(p, f(word, p))	1.3862944
-words	N	words	0.6931472
-words	NP/NP	l(p, f(word, p))	1.9459101
-words	(NP/NP)/(NP\NP)	l(p, f(word, p))	-1.0
+words	S/NP	l(p, f(words, p))	-1.0
+words	(NP/PP)/(NP\NP)	l(p, f(words, p))	-1.0
+words	(NP/PP)/(NP\NP)	l(x1, a(x1, l(x0, f(words, x0))))	0.0
+words	NP/PP	l(p, f(words, p))	2.6390574
+words	NP/PP	l(p, f(word, p))	-1.0
+words	N	words	1.3862944
+words	NP/NP	l(p, f(words, p))	1.0986123
+words	(NP/NP)/(NP\NP)	l(p, f(words, p))	-1.0
+words	(NP/NP)/(NP\NP)	l(x1, a(x1, l(x0, f(words, x0))))	1.0986123
 black	NP	black	-1.0
 black	N	f(word, black)	0.0
-j	N	ltrfltr	0.0
+onceSPuponSPaSPtime	N	onceSPuponSPaSPtime	0.0
+j	N	j	0.0
 off	NP	off	0.0
-o	N	o	0.6931472
-the	NP/N	l(x, x)	0.0
-q	N	q	0.0
-r	N	r	1.7917595
-r	N	f(atleast, 2, r)	0.0
-r	N	l(x0, f(contain, x0, f(atleast, 2, r)))	-1.0
+o	N	o	1.9459101
+the	NP/N	l(x, x)	1.609438
+the	NP/N	l(x0, f(word, x0))	0.0
+the	NP/N	l(x1, l(x0, f(contain, x0, f(word, x1))))	0.0
+the	NP/N	l(x1, l(x0, f(thet, x0, x1)))	-1.0
+q	N	q	-1.0
+r	N	r	0.6931472
+ISPamSPmad	N	ISPamSPmad	0.0
 t	N	t	0.6931472
 Homer	N	Homer	-1.0
 y	N	y	0.0
-z	NP	z	0.0
-z	N	z	1.609438
+digits	N/N	l(x, x)	-1.0
+digits	N	digits	0.0
+z	NP	z	1.0986123
+z	N	z	2.1972246
+z	N	l(x0, f(not, x0, f(contain, z)))	-1.0
 imal	N	imal	0.0
+but	(S\PP)/PP	l(p, l(q, f(and, q, p)))	-1.0
+but	(NP\NP)/PP	l(p, l(q, f(or, q, p)))	-1.0
+but	(NP\PP)/PP	l(p, l(q, f(and, q, p)))	-1.0
 but	(NP\NP)/NP	l(p, l(q, f(and, q, p)))	0.6931472
 uppercase	NP\NP	l(p, f(uppercase, p))	-1.0
-uppercase	N/N	l(x0, f(uppercase, x0))	0.0
-uppercase	N/N	l(x, x)	1.0986123
+uppercase	N/N	l(x0, f(uppercase, x0))	1.609438
 uppercase	N\N	l(p, f(uppercase, p))	-1.0
 tt	N	N	-1.0
 de	N	de	-1.0
+ln	(NP/N)/N	l(p, l(q, f(len, p, q)))	2.3025851
+ln	(NP/NP)/N	l(p, l(q, f(len, p, q)))	2.1972246
+ln	(NP/NP)/N	l(x, x)	0.6931472
+ln	(NP/NP)/N	l(x1, l(x0, a(x0, f(len, x1, she))))	0.0
+ln	(NP/NP)/N	l(x2, l(x1, a(x1, l(x0, f(contain, x0, f(len, x2, she))))))	0.0
 shake	N	shake	0.0
 before	(PP\NP)/NP	l(p, l(q, f(before, q, p)))	1.609438
 before	(NP\NP)/NP	l(p, l(q, f(before, q, p)))	-1.0
-numbers	N	numbers	1.9459101
+use	(S\NP)/NP	l(x1, l(x0, f(contain, x0, x1)))	0.0
+est	N	est	0.0
+numbers	N	numbers	1.7917595
+sign	N	sign	0.0
 dist	N	dist	0.0
-do	NP\NP	l(p, p)	1.0986123
+do	NP\NP	l(p, p)	3.0445225
 do	NP\NP	l(p, f(do, p))	-1.0
 do	N	do	-1.0
+blog	N	blog	0.6931472
 pqr	N	pqr	0.0
-that	NP\NP	l(x, x)	3.9318256
+that	NP\NP	l(x, x)	4.477337
 that	NP\NP	l(p, f(that, p))	-1.0
-that	NP\NP	l(x0, f(word, x0))	-1.0
+that	NP\NP	l(x2, l(x1, l(x0, f(contain, x0, a(x2, f(contain, x1))))))	0.0
+that	NP\NP	l(x1, l(x0, a(x1, f(contain, x0))))	0.0
 that	NP\NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, f(letters, x1))))))	-1.0
+that	NP\NP	l(x2, l(x1, l(x0, f(contain, x0, a(x2, f(contain, f(letters, x1)))))))	-1.0
 that	NP\NP	l(x0, f(word, f(contain, x0)))	-1.0
-that	NP\NP	l(x1, l(x0, f(contain, x0, f(word, x1))))	-1.0
-that	NP\NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
 that	NP\NP	l(x0, f(word, f(contain, f(letters, x0))))	-1.0
+that	NP\NP	l(x1, l(x0, f(contain, x0, f(word, f(contain, x1)))))	-1.0
+that	NP\NP	l(x1, l(x0, a(x1, f(contain, f(letters, x0)))))	-1.0
 son	N	son	0.0
 ham	N	ham	0.0
-only	NP/NP	l(p, f(only, p))	1.3862944
-only	NP/NP	l(p, l(q, f(contaonly, q, p)))	-1.0
-only	NP/NP	l(x0, f(contaonly, x0))	-1.0
-only	NP/NP	l(p, l(q, f(only, q, p)))	-1.0
-only	NP/NP	l(p, f(onlys, p))	-1.0
-only	NP/NP	l(x, x)	0.6931472
+than	NP/NP	l(x, x)	0.6931472
+only	NP/NP	l(p, f(only, p))	1.0986123
 spoon	N	spoon	-1.0
+starts	PP/NP	l(p, f(starts, p))	-1.0
+starts	(PP\NP)/NP	l(p, l(q, f(starts, q, p)))	-1.0
 starts	(S\NP)/NP	l(p, l(q, f(starts, q, p)))	-1.0
-starts	NP/NP	l(p, f(starts, p))	-1.0
 dust	N	dust	0.0
+digit	N/N	l(x, x)	-1.0
 digit	N	digit	0.0
-digit	N	l(x0, f(end, x0, digit))	0.0
-vowels	N	vowels	0.6931472
+which	NP\NP	l(x0, x0)	0.0
+vowels	N	vowels	1.3862944
+vowels	N	l(x0, f(not, x0, vowels))	0.0
 precedes	(PP\NP)/NP	l(p, l(q, f(before, q, p)))	-1.0
 Odyssey	N	Odyssey	-1.0
-ause	N	ause	0.0
+For	N	For	0.0
+ause	N	ause	0.6931472
 er	N	er	0.0
 casualties	N	casualties	0.0
-both	NP/N	l(x, x)	-1.0
+both	NP/N	l(x, x)	0.0
+ending	PP/NP	l(p, f(ends, p))	2.1972246
+ending	PP/NP	l(x0, f(end, x0))	0.0
+ending	(PP\NP)/NP	l(p, l(q, f(ends, q, p)))	-1.0
 ending	(S\NP)/NP	l(p, l(q, f(ends, q, p)))	-1.0
-ending	NP/NP	l(p, f(ends, p))	1.7917595
 oxy	N	oxy	0.0
-vowel	N	vowel	1.0986123
+she	N	she	-1.0
+she	NP	l(x, x)	1.3862944
+phrase	NP/N	l(x, x)	-1.0
+phrase	NP/NP	l(x, x)	0.6931472
+vowel	N	vowel	1.9459101
 ne	N	ne	0.0
+no	(S\NP)/PP	l(p, l(q, f(not, q, p)))	-1.0
+no	NP/N	l(x, x)	0.6931472
+no	NP/N	l(x1, l(x0, f(not, x0, x1)))	0.0
+no	NP/NP	l(p, f(not, p))	-1.0
 mun	N	mun	0.0
 foo	N	foo	0.0
 nu	N	nu	0.0
 show	N	show	0.0
+not	(S\NP)/PP	l(p, l(q, f(not, q, p)))	0.0
 not	NP/NP	l(p, f(not, p))	0.6931472
-not	(S\NP)/NP	l(x1, l(x0, f(nots, x0, x1)))	-1.0
-not	(S\NP)/NP	l(x1, l(x0, f(not, x0, x1)))	1.0986123
-not	(S\NP)/NP	l(x, x)	-1.0
+not	(S\NP)/NP	l(x1, l(x0, f(not, x0, x1)))	1.3862944
+not	(S\NP)/NP	l(p, l(q, f(nots, q, p)))	-1.0
+not	(S\NP)/NP	l(x, x)	1.7917595
+not	(S\NP)/NP	l(x1, l(x0, f(not, x0, f(contain, x1))))	1.3862944
+not	(S\NP)/NP	l(x1, l(x0, a(x1, x0)))	1.7917595
 paper	N	paper	0.0
-and	(NP\PP)/PP	l(p, l(q, f(and, q, p)))	1.0986123
+booyah	N	booyah	0.0
+and	(PP\NP)/PP	l(p, l(q, f(or, q, p)))	-1.0
+and	(S\PP)/PP	l(p, l(q, f(and, q, p)))	0.0
+and	(PP\PP)/PP	l(p, l(q, f(and, q, p)))	1.0986123
 and	N	and	0.0
-and	(NP\NP)/NP	l(p, l(q, f(and, q, p)))	1.609438
+and	(NP\NP)/NP	l(p, l(q, f(and, q, p)))	1.9459101
 and	(NP\NP)/NP	l(p, l(q, f(after, p, q)))	-1.0
 and	(NP\NP)/NP	l(x, x)	-1.0
+ends	PP/NP	l(p, f(ends, p))	-1.0
+ends	PP/NP	l(x0, f(end, x0))	0.0
+ends	(PP\NP)/NP	l(p, l(q, f(ends, q, p)))	-1.0
 ends	(S\NP)/NP	l(p, l(q, f(ends, q, p)))	0.0
-ends	NP/NP	l(p, l(q, f(ends, q, p)))	-1.0
+end	PP/NP	l(p, f(ends, p))	-1.0
+end	(PP\NP)/NP	l(p, l(q, f(ends, q, p)))	-1.0
 end	(S\NP)/NP	l(p, l(q, f(ends, q, p)))	1.0986123
 end	(S\NP)/NP	l(x1, l(x0, f(end, x0, x1)))	0.0
-end	(S\NP)/NP	l(x, x)	0.0
-end	NP/NP	l(p, f(ends, p))	-1.0
-lines	N	lines	4.477337
+lines	N	lines	4.836282
 on	NP	on	0.0
 news	N	news	0.0
 WorldSPWarSPII	N	WorldSPWarSPII	0.0
-or	(NP\PP)/PP	l(p, l(q, f(or, q, p)))	-1.0
 or	(NP\NP)/PP	l(p, l(q, f(or, q, p)))	-1.0
-or	(NP\NP)/NP	l(p, l(q, f(or, q, p)))	1.609438
-ing	N	ing	0.0
+or	(S\PP)/PP	l(p, l(q, f(or, q, p)))	-1.0
+or	(NP\PP)/PP	l(p, l(q, f(or, q, p)))	-1.0
+or	(NP\NP)/NP	l(p, l(q, f(or, q, p)))	1.9459101
+or	(NP\NP)/NP	l(x1, l(x0, f(and, x0, x1)))	0.0
+ing	N	ing	0.6931472
 lowercase	NP\NP	l(p, f(lowercase, p))	-1.0
-lowercase	N/N	l(x0, f(lowercase, x0))	0.0
+lowercase	N/N	l(x0, f(lowercase, x0))	0.6931472
 lowercase	N\N	l(p, f(lowercase, p))	-1.0
-start	(S\NP)/NP	l(x1, l(x0, f(start, x0, x1)))	0.0
-sandwich	N	sandwich	0.0
+start	PP/NP	l(p, f(starts, p))	0.6931472
+start	(PP\NP)/NP	l(p, l(q, f(starts, q, p)))	0.0
+start	(S\NP)/NP	l(p, l(q, f(starts, q, p)))	0.0
 also	NP/NP	l(x, x)	0.0
+sandwich	N	sandwich	0.0
+followed	(PP\NP)/NP	l(x1, l(x0, f(after, x1, x0)))	0.0
 followed	(NP\NP)/NP	l(p, l(q, f(after, p, q)))	-1.0
-followed	(S\NP)/NP	l(x1, l(x0, f(after, x1, x0)))	0.0
-any	NP/N	l(x, x)	0.0
+any	NP/N	l(x, x)	1.3862944
+any	NP/N	l(x1, l(x0, f(not, x0, f(contain, x1))))	0.6931472
+any	NP/N	l(x1, l(x0, f(anyt, x0, x1)))	-1.0
 any	NP	l(x, x)	-1.0
 mno	N	mno	0.0
 with	(S\NP)/PP	l(x1, l(x0, f(contain, x0, x1)))	0.0
-with	NP/NP	l(x, x)	2.7725887
+with	NP/NP	l(x, x)	3.3322046
 pa	N	pa	0.0
