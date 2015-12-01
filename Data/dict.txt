@@ -1,49 +1,77 @@
 contain	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
 contain	(S\NP)/S	l(p, l(q,f(contain, q, p)))
+contain	(S\NP)/PP	l(p, l(q,f(contain, q, p)))
+contain	NP/NP	l(p,f(contain,p)))
 containing	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
 containing	(S\NP)/S	l(p, l(q,f(contain, q, p)))
 containing	N/N	l(x,x)
 containing	NP/NP	l(x,x)
+containing	(S\NP)/PP	l(p, l(q,f(contain, q, p)))
 using	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
 using	(S\NP)/S	l(p, l(q,f(contain, q, p)))
-using	NP/NP	l(p, l(q,f(contain, q, p)))
+using	NP/NP	l(p,f(contain,p)))
+using	(S\NP)/PP	l(p, l(q,f(contain, q, p)))
 utilize	(S\NP)/NP	l(p, l(q,f(contain, q, p)))
 utilize	(S\NP)/S	l(p, l(q,f(contain, q, p)))
-utilize	NP/NP	l(p, l(q,f(contain, q, p)))
+utilize	NP/NP	l(p,f(contain,p)))
+utilize	(S\NP)/PP	l(p, l(q,f(contain, q, p)))
 ends	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
-ends	 NP/NP	l(p, l(q,f(ends, q, p)))
+ends	 PP/NP	l(p, f(ends,p)))
+ends	(PP\NP)/NP	l(p, l(q,f(ends, q, p)))
 ending	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
-ending	NP/NP	l(p,f(ends,p))
+ending	PP/NP	l(p,f(ends,p))
+ending	(PP\NP)/NP	l(p, l(q,f(ends, q, p)))
 end	(S\NP)/NP	l(p, l(q,f(ends, q, p)))
-end	NP/NP	l(p,f(ends,p))
+end	PP/NP	l(p,f(ends,p))
+end	(PP\NP)/NP	l(p, l(q,f(ends, q, p)))
 starting	(S\NP)/NP	l(p, l(q,f(starts, q, p)))
-starting 	NP/NP	l(p,f(starts,p))
+starting 	PP/NP	l(p,f(starts,p))
+starting	(PP\NP)/NP	l(p, l(q,f(starts, q, p)))
 starts	(S\NP)/NP	l(p, l(q,f(starts, q, p)))
-starts 	NP/NP	l(p, f(starts, p))
+starts 	PP/NP	l(p, f(starts, p))
+starts	(PP\NP)/NP	l(p, l(q,f(starts, q, p)))
+start	(S\NP)/NP	l(p, l(q,f(starts, q, p)))
+start 	PP/NP	l(p, f(starts, p))
+start	(PP\NP)/NP	l(p, l(q,f(starts, q, p)))
 before	(NP\NP)/NP	l(p, l(q,f(before, q, p)))
 before	(PP\NP)/NP	l(p, l(q,f(before, q, p)))
 precedes	(PP\NP)/NP	l(p, l(q,f(before, q, p)))
 after	(NP\NP)/NP	l(p, l(q,f(after, q, p)))
 after	(PP\NP)/NP	l(p, l(q,f(after, q, p)))
 followed	(NP\NP)/NP	l(p, l(q,f(after, p, q)))
-words	NP/NP	l(p,f(word,p))
-words	S/NP	l(p,f(word,p))
-words 	(NP/NP)/(NP\NP)	l(p,f(word,p))
+words	NP/NP	l(p,f(words,p))
+words	S/NP	l(p,f(words,p))
+words 	(NP/NP)/(NP\NP)	l(p,f(words,p))
+words	(NP/PP)/(NP\NP)	l(p,f(words,p))
 words	N	words
+words	NP/PP	l(p,f(words,p))
 word	S/NP	l(p,f(word,p))
 word	(NP/NP)/(NP\NP)	l(p,f(word,p))
 word	NP/NP	l(p,f(word,p))
+word	(NP/PP)/(NP\NP)	l(p,f(word,p))
+word	N	word
+words	NP/PP	l(p,f(word,p))
 only	NP/NP	l(p,f(only,p))
 and	(NP\NP)/NP	l(p,l(q,f(and,q,p)))
-and	(NP\PP)/PP	l(p, l(q, f(and, q, p)))
+and	(PP\PP)/PP	l(p, l(q, f(and, q, p)))
+and	(S\PP)/PP	l(p,l(q,f(and,q,p)))
+and	(PP\NP)/PP	l(p,l(q,f(or,q,p)))
 or	(NP\NP)/NP	l(p,l(q,f(or,q,p)))
 or	(NP\PP)/PP	l(p,l(q,f(or,q,p)))
 or	(NP\NP)/PP	l(p,l(q,f(or,q,p)))
+or	(S\PP)/PP	l(p,l(q,f(or,q,p)))
 but	(NP\NP)/NP	l(p,l(q,f(and,q,p)))
+but	(NP\PP)/PP	l(p, l(q, f(and, q, p)))
+but	(S\PP)/PP	l(p,l(q,f(and,q,p)))
+but	(NP\NP)/PP	l(p,l(q,f(or,q,p)))
 letter	NP/NP	l(p,f(letter,p))
 letters	NP/NP	l(p,f(letters,p))
 letters	N	letters
+letter	N	letter
 not	NP/NP	l(p,f(not,p))
+not	(S\NP)/PP	l(p,l(q,f(not,q,p)))
+no	NP/NP	l(p,f(not,p))
+no	(S\NP)/PP	l(p,l(q,f(not,q,p)))
 do	NP\NP	l(p,p)
 do	N	do
 lowercase	NP\NP	l(p,f(lowercase,p))
@@ -52,6 +80,28 @@ lowercase	N\N	l(p,f(lowercase,p))
 uppercase	N\N	l(p,f(uppercase,p))
 atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))
 atleast	(PP/NP)/NP	l(p, l(q, f(atleast, p, q)))
+atleast	PP/NP	l(p,f(atleast,p))
+more	PP/(NP\NP)	l(p,f(atleast,p))
+than	(NP/NP)	l(x,x)
+with	NP/NP	l(x,x)
+in	NP/NP	l(x,x)
+that	NP\NP	l(x,x)
+any	NP	l(x,x)
+ln	(NP/NP)/N	l(p,l(q,f(len,p,q)))
+ln	(NP/N)/N	l(p,l(q,f(len,p,q)))
+by	NP/NP	l(x,x)
+both	NP/N	l(x,x)
+too	(S\NP)\(S\NP)	l(x,x)
+also	NP/NP	l(x,x)
+phrase	NP/NP	l(x,x)
+phrase	NP/N	l(x,x)
+digit	N	digit
+digit	N/N	l(x,x)
+digits	N	digits
+digits	N/N	l(x,x)
+character	NP/N	l(x,x)
+characters	N	characters
+character	N	character
 lines	N	lines
 ham	N	ham
 sandwich	N	sandwich
@@ -62,6 +112,7 @@ ing	N	ing
 er	N	er
 t	N	t
 e	N	e
+e	NP	e
 paper	N	paper
 show	N	show
 news	N	news
@@ -72,9 +123,6 @@ mun	N	mun
 q	N	q
 r	N	r
 two	N	two
-with	NP/NP	l(x,x)
-in	NP/NP	l(x,x)
-that	NP\NP	l(x,x)
 one	N	one
 vowel	N	vowel
 vowels	N	vowels
@@ -91,7 +139,6 @@ bc	NP	bc
 WorldSPWarSPII	N	WorldSPWarSPII
 casualties	N	casualties
 o	N	o
-any	NP	l(x,x)
 mno	N	mno
 pqr	N	pqr
 far	N	far
@@ -109,9 +156,6 @@ tt	N	N
 2	N	2
 3	N	3
 ause	N	ause
-characters	N	characters
-character	N	character
-character	NP/N	l(x,x)
 min	N	min
 imal	N	imal
 g	N	g
@@ -119,23 +163,33 @@ bi	N	bi
 mix	N	mix
 shake	N	shake
 pa	N	pa
-both	NP/N	l(x,x)
-too	(S\NP)\(S\NP)	l(x,x)
 oxy	N	oxy
 ers	N	ers
 on	NP	on
 off	NP	off
-also	NP/NP	l(x,x)
 der	N	der
 spoon	N	spoon
-by	NP/NP	l(x,x)
 y	N	y
-not	NP/NP	l(p, f(not, p))
-y	N	y
-lines	N	lines
-contain	(S\NP)/NP	l(p, l(q, f(contain, q, p)))
-but	(NP\NP)/NP	l(p, l(q, f(and, q, p)))
 z	N	z
 o	N	o
-that	NP\NP	l(x, x)
-and	(NP\NP)/NP	l(p, l(q, f(and, q, p)))
+re	N	re
+per	N	per
+tain	N	tain
+4	N	4
+ISPamSPmad	N	ISPamSPmad
+The	N	The
+For	N	For
+blog	N	blog
+upper	N	upper
+lower	N	lower
+she	N	she
+onceSPuponSPaSPtime	N	onceSPuponSPaSPtime
+booyah	N	booyah
+bar	N	bar
+stress	N	stress
+z	NP	z
+sign	N	sign
+bedrock	N	N
+yabadabadoo	N	N
+c	N	c
+est	N	est
