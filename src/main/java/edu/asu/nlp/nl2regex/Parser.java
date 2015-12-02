@@ -89,7 +89,6 @@ public class Parser {
 		}
 		return sReturns;
 	}
-
 	/**
 	 * This is a recursive method, goes till the bottom of the tree to resolve
 	 * arguments of the child functions
