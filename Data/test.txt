@@ -1,1 +1,1 @@
-lines that do not contain any number
+lines that contain b before r

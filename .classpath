@@ -22,6 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/sem3/CSE571/NL2KR-System-1.7.0001/NL2KR-System/NL2KR.jar"/>
+	<classpathentry kind="lib" path="lib/NL2KR.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
